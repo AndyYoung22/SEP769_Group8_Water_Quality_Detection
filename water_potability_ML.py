@@ -32,6 +32,7 @@ df["ph"].fillna(value=df["ph"].mean(),inplace=True)
 df["Sulfate"].fillna(value=df["Sulfate"].mean(),inplace=True)
 df["Trihalomethanes"].fillna(value=df["Trihalomethanes"].mean(),inplace=True)
 
+#REF: https://www.kaggle.com/code/smailaar/water-quality-ml by İSMAIL ACAR, Nov 19, 2022
 #Check for outliers
 for col_index, column in df.iteritems():
         if col_index == "index":
